@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1aba0474a9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Fase 2</title>
+</head>
+<body>
+    
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">   
+            <div class="barra">
+                <div>Evan Smith</div>  
+                <nav class="navegacion">                
+                    <a href="#home">Home</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>    
+            <h1 id="titulo">Evan Smith Photography</h1>           
+        </div>        
+      </header>
+    
+    <main class="contenedor">   
+
+        <h2 class="centrar-texto">Gallery</h2>
+        <section class="contenido-galeria seccion" id="gallery">
+            
+            <div class="galeria">                
+                <h3>Portraits</h3>
+                <img src="./img/portrait1.jpg" alt="Portrait of a woman">                
+            </div>           
+            <div class="galeria">
+                <h3>Places</h3>
+                <img src="./img/landscape1.jpg" alt="Landscape">                
+            </div> 
+            <div class="galeria">
+                <h3>Videos</h3>
+                <video autoplay loop>
+                    <source src="./img/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="about"  class="seccion contenido-about">            
+            <h2>About me</h2>            
+            <img src="./img/photographer2.jpg" alt="Fotografo"  >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros ligula, accumsan accumsan eleifend sit amet, gravida in enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam at elementum nisl. Nam ac felis enim. Phasellus euismod erat vehicula, gravida dolor eu, interdum turpis. Sed orci augue, condimentum vitae semper eget, rutrum varius sapien. Nulla nec massa mattis, accumsan ex ac, placerat lacus. Pellentesque sollicitudin, justo eget facilisis porttitor, mi purus blandit urna, eu volutpat ante massa et lacus. Maecenas non justo nec ex dictum elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo, mi quis fermentum aliquet, quam nisl placerat felis, sit amet sodales mi erat non eros. Praesent euismod rutrum nisi, eu sodales tortor pellentesque eget. Vivamus pretium, nibh sit amet lobortis venenatis, massa est pellentesque leo, ut consequat elit nisl id arcu. Sed sit amet elementum nibh. Sed eget vehicula lorem. In elementum, tellus nec eleifend tincidunt, erat quam eleifend turpis, a pretium odio turpis eget felis. Proin ornare rutrum auctor. Proin iaculis, ex id ultrices pretium, quam nibh porta nisi, id vulputate lacus enim vel sem. Sed consectetur rhoncus mauris, vel congue ante mollis non. Nulla consequat eleifend tellus. Praesent non elementum ligula. Ut maximus mattis diam, vitae cursus magna varius quis. Praesent accumsan varius urna, vel iaculis mi interdum at. Integer luctus tellus lorem, nec suscipit libero pharetra sed. Donec vel enim ut massa venenatis consectetur. Nulla sem sem, tempor quis sem at, varius finibus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent fringilla enim vestibulum libero egestas rhoncus. Vivamus vel viverra ante. Fusce ultricies, risus ac suscipit tincidunt, justo ex tempor nibh, euismod feugiat lacus orci ac elit. Curabitur sit amet fringilla diam, eu dapibus odio. Etiam et elit rhoncus, sollicitudin lectus eget, tempor ex. Aliquam velit ligula, tempus nec aliquam nec, dapibus a neque.
+            </p>                      
+        </section>
+        
+        <section id="contact" class="seccion contenido-contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>        
+    </main>    
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class=navegacion>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">YouTube</a>                
+            </nav>
+            <p class="nombre">Santiago Andres Garcia Rojas</p>
+        </div>
+    </footer>
+</body>
+</html>

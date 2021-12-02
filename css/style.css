@@ -1,0 +1,247 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* reset para REMs - 62.5% = 10px de 16px */
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 3rem;
+}
+
+/* Globales */
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+/* Utilidades */
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+
+
+/* Header */
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+.site-header.inicio {
+    background-image: url(/img/header-photo.jpg);
+    background-position: center center;
+    background-size: cover;    
+    height: 100vh;
+    min-height: 100vh;
+}
+.contenido-header h1 {
+    display: flex;        
+    align-items: center;    
+    justify-content: center;
+    color: black;
+    text-transform:uppercase;
+    text-align: center;
+    white-space: nowrap;
+       
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50rem; 
+}
+
+.barra {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.barra div{
+    color: black;
+    font-size: 3rem;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.navegacion a:hover {
+    color:#D9A05B;
+}
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+/* Main */
+.contenido-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;  
+    flex-wrap: wrap;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: center;
+    margin-bottom: 2rem;    
+    padding: 2rem;
+}
+
+.galeria img{    
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;    
+    padding: 2rem;
+    min-height: 20vh;
+    max-height: 30vh;
+}
+
+.galeria video{        
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;    
+    padding: 2rem; 
+    max-height: 30vh;
+}
+
+
+.contenido-about{    
+    display: flex;
+    align-items: center;    
+    flex-direction: column; 
+}
+
+
+
+.contenido-about p{
+    text-align: justify;
+    display: flex;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 200rem;
+}
+
+.contenido-contact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    align-items: center;
+    background-color: #EBEEF2;
+    padding: 3em;    
+}
+
+.contenido-contact form{    
+    display: flex;    
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 8em;
+    padding-right: 8em;    
+}
+
+/* Footer */
+.site-footer {    
+    background-color: #333333;
+    margin-bottom: 0;
+}
+.contenedor-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem 0;    
+    justify-content: space-evenly;
+}
+.nombre {
+    margin: 0;
+    color: #ffffff;
+}
+
+@media(min-width: 480px){      
+    .contenido-header {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-content: center;
+    }    
+    .contenido-header h1 {
+        font-size: 200%;
+        justify-content: center;   
+        text-align: center;
+    }
+    .contenedor-galeria{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 200rem;
+    }
+    .barra {
+        padding-top: 1rem;
+    }
+    .contenido-about img{
+        max-width: 70%;
+    }
+}
+
+@media(min-width: 768px){
+    .contenido-header h1 {
+        font-size: 300%;
+        justify-content: center;   
+        text-align: center;
+        
+    }
+    .contenedor-galeria{
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 200rem;
+    }
+    .barra {
+        padding-top: 2rem;
+    }
+    .contenido-about img{
+        max-width: 70%;
+    }
+}
+
+@media(min-width: 1024px){
+    .contenido-header h1 {
+        font-size: 350%; 
+    }
+    .barra {
+        padding-top: 3rem;
+    }
+    .contenido-about img{
+        max-width: 60%;
+    }
+}
