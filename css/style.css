@@ -53,7 +53,7 @@ h4 {
 }
 
 .site-header.inicio {
-    background-image: url(./img/header-photo.jpg);
+    background-image: url("https://avcith.github.io/sagarciaro/header-photo.jpg");
     background-position: center center;
     background-size: cover;    
     height: 100vh;
