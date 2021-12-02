@@ -47,12 +47,13 @@ h4 {
 
 
 /* Header */
-.site-header {
-    
+.site-header {    
+    background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
+
 .site-header.inicio {
-    background-image: url(/img/header-photo.jpg);
+    background-image: url(/img/hr-photo.jpg);
     background-position: center center;
     background-size: cover;    
     height: 100vh;
